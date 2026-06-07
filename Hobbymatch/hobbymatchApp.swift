@@ -11,25 +11,39 @@ import SwiftUI
 
 @main
 struct hobbymatchApp: App {
-    @State private var viewModel: AuthViewModel
+    @State private var viewModel: SessionViewModel
 
     init() {
         FirebaseApp.configure()
-        _viewModel = State(initialValue: AuthViewModel())
+        _viewModel = State(initialValue: SessionViewModel())
     }
 
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                if let user = viewModel.user {
-                    MainView(user: user)
-                } else {
-                    LoginView()
-                }
-            }.environment(viewModel)
-                .onOpenURL { url in
-                    GIDSignIn.sharedInstance.handle(url)
-                }
+            AppNavigation()
+                .environment(viewModel)
+        }
+    }
+}
+
+struct AppNavigation: View {
+    @Environment(SessionViewModel.self) private var sessionViewModel
+
+    var body: some View {
+        NavigationStack {
+            switch sessionViewModel.state {
+            case .loading:
+                ProgressView()
+            case .unauthorized:
+                LoginView()
+            case let .authorizedWithoutProfile(user):
+                ProfileEditView(user: user)
+            case let .authorized(user, profile):
+                MainView(user: user, profile: profile)
+            }
+        }
+        .onOpenURL { url in
+            GIDSignIn.sharedInstance.handle(url)
         }
     }
 }

@@ -8,24 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
-    @Environment(AuthViewModel.self) private var viewModel
     let user: AuthUser
+    let profile: UserProfile
 
     var body: some View {
-        VStack {
-            Text(user.displayName ?? "ナナシさん")
-            AsyncImage(url: user.photoURL) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
+        TabView {
+            Tab("友達を探す", systemImage: "magnifyingglass") {
+                ProfileListView(currentUserId: user.id)
             }
-            .frame(width: 50, height: 50)
-            .clipShape(Circle())
-
-            Button(action: {
-                viewModel.signOut()
-            }) {
-                Text("ログアウト")
+            Tab("アカウント", systemImage: "person") {
+                AccountView(profile: profile)
             }
         }
     }

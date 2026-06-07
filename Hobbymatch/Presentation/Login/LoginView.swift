@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Environment(AuthViewModel.self) private var viewModel
+    @Environment(SessionViewModel.self) private var viewModel
 
     var body: some View {
-        Button(action: {
+        Button {
             Task {
                 await viewModel.signInWithGoogle()
             }
-        }) {
+        } label: {
             Text("ログイン")
+                .frame(maxWidth: .infinity)
         }
+        .buttonStyle(.bordered)
+        .controlSize(.large)
     }
 }
