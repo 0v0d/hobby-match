@@ -1,19 +1,11 @@
 //
-//  UserProfileServiceProtocol.swift
+//  UserProfileService.swift
 //  Hobbymatch
 //
-//  Created by 0v0 on 2026/05/21.
+//  Created by 0v0 on 2026/06/14.
 //
 
 @preconcurrency import FirebaseFirestore
-
-protocol UserProfileServiceProtocol: Sendable {
-    func create(uid: String, profile: UserProfile) async throws
-    func fetch(uid: String) async throws -> UserProfile?
-    func update(uid: String, profile: UserProfile) async throws
-    func fetchAll() async throws -> [UserProfile]
-    func profilesStream() -> AsyncThrowingStream<[UserProfile], Error>
-}
 
 final class UserProfileService: UserProfileServiceProtocol {
     private let collection: CollectionReference

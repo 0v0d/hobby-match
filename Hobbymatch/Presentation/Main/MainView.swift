@@ -17,7 +17,7 @@ struct MainView: View {
                 ProfileListView(currentUserId: user.id)
             }
             Tab("アカウント", systemImage: "person") {
-                AccountView(profile: profile)
+                MyAccountView(profile: profile)
             }
         }
     }

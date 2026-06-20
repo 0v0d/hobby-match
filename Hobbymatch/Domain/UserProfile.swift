@@ -7,7 +7,7 @@
 
 import FirebaseFirestore
 
-struct UserProfile: Codable, Identifiable, Sendable {
+struct UserProfile: Codable, Identifiable, Sendable,Hashable {
     @DocumentID var id: String?
     var displayName: String
     var bio: String
