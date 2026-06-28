@@ -64,6 +64,7 @@ final class SessionViewModel {
     }
 
     private func onAuthChange(_ authUser: AuthUser?) async {
+        print("[DEBUG] onAuthChange user=\(authUser?.id ?? "nil")")
         guard let user = authUser else {
             state = .unauthorized
             return
@@ -72,6 +73,7 @@ final class SessionViewModel {
     }
 
     func loadUserProfile(user: AuthUser) async {
+        print("[DEBUG] loadUserProfile start uid=\(user.id)")
         do {
             guard let userProfile = try await userProfileService.fetch(
                 uid: user.id

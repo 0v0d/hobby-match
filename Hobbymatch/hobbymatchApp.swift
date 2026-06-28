@@ -8,6 +8,8 @@
 import FirebaseCore
 import GoogleSignIn
 import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
 
 @main
 struct hobbymatchApp: App {
@@ -15,6 +17,13 @@ struct hobbymatchApp: App {
 
     init() {
         FirebaseApp.configure()
+        #if DEBUG
+        let settings = Firestore.firestore().settings
+        settings.host = "127.0.0.1:8080"
+        settings.isSSLEnabled = false
+        settings.cacheSettings = MemoryCacheSettings()
+        Firestore.firestore().settings = settings
+        #endif
         _viewModel = State(initialValue: SessionViewModel())
     }
 
