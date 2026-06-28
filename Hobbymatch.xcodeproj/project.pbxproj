@@ -31,38 +31,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D0530DCD2FB7704900121DBD /* hobbymatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hobbymatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0530DDA2FB7704B00121DBD /* hobbymatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hobbymatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0530DE42FB7704B00121DBD /* hobbymatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hobbymatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0530DCD2FB7704900121DBD /* Hobbymatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hobbymatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0530DDA2FB7704B00121DBD /* HobbymatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbymatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0530DE42FB7704B00121DBD /* HobbymatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbymatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D0A2883D2FB8B5C400A0519E /* Exceptions for "hobbymatch" folder in "hobbymatch" target */ = {
+		D0A2883D2FB8B5C400A0519E /* Exceptions for "Hobbymatch" folder in "Hobbymatch" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D0530DCC2FB7704900121DBD /* hobbymatch */;
+			target = D0530DCC2FB7704900121DBD /* Hobbymatch */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D0530DCF2FB7704900121DBD /* hobbymatch */ = {
+		D0530DCF2FB7704900121DBD /* Hobbymatch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D0A2883D2FB8B5C400A0519E /* Exceptions for "hobbymatch" folder in "hobbymatch" target */,
+				D0A2883D2FB8B5C400A0519E /* Exceptions for "Hobbymatch" folder in "Hobbymatch" target */,
 			);
-			path = hobbymatch;
+			path = Hobbymatch;
 			sourceTree = "<group>";
 		};
-		D0530DDD2FB7704B00121DBD /* hobbymatchTests */ = {
+		D0530DDD2FB7704B00121DBD /* HobbymatchTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = hobbymatchTests;
+			path = HobbymatchTests;
 			sourceTree = "<group>";
 		};
-		D0530DE72FB7704B00121DBD /* hobbymatchUITests */ = {
+		D0530DE72FB7704B00121DBD /* HobbymatchUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = hobbymatchUITests;
+			path = HobbymatchUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -99,9 +99,9 @@
 		D0530DC42FB7704900121DBD = {
 			isa = PBXGroup;
 			children = (
-				D0530DCF2FB7704900121DBD /* hobbymatch */,
-				D0530DDD2FB7704B00121DBD /* hobbymatchTests */,
-				D0530DE72FB7704B00121DBD /* hobbymatchUITests */,
+				D0530DCF2FB7704900121DBD /* Hobbymatch */,
+				D0530DDD2FB7704B00121DBD /* HobbymatchTests */,
+				D0530DE72FB7704B00121DBD /* HobbymatchUITests */,
 				D0530DFE2FB773FF00121DBD /* Frameworks */,
 				D0530DCE2FB7704900121DBD /* Products */,
 			);
@@ -110,9 +110,9 @@
 		D0530DCE2FB7704900121DBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0530DCD2FB7704900121DBD /* hobbymatch.app */,
-				D0530DDA2FB7704B00121DBD /* hobbymatchTests.xctest */,
-				D0530DE42FB7704B00121DBD /* hobbymatchUITests.xctest */,
+				D0530DCD2FB7704900121DBD /* Hobbymatch.app */,
+				D0530DDA2FB7704B00121DBD /* HobbymatchTests.xctest */,
+				D0530DE42FB7704B00121DBD /* HobbymatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0530DCC2FB7704900121DBD /* hobbymatch */ = {
+		D0530DCC2FB7704900121DBD /* Hobbymatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0530DEE2FB7704B00121DBD /* Build configuration list for PBXNativeTarget "hobbymatch" */;
+			buildConfigurationList = D0530DEE2FB7704B00121DBD /* Build configuration list for PBXNativeTarget "Hobbymatch" */;
 			buildPhases = (
 				D0530DC92FB7704900121DBD /* Sources */,
 				D0530DCA2FB7704900121DBD /* Frameworks */,
@@ -140,9 +140,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D0530DCF2FB7704900121DBD /* hobbymatch */,
+				D0530DCF2FB7704900121DBD /* Hobbymatch */,
 			);
-			name = hobbymatch;
+			name = Hobbymatch;
 			packageProductDependencies = (
 				D0530DFF2FB773FF00121DBD /* FirebaseCore */,
 				D0530E012FB774A400121DBD /* FirebaseAuth */,
@@ -150,12 +150,12 @@
 				D0A2883A2FB8B58500A0519E /* GoogleSignIn */,
 			);
 			productName = hobbymatch;
-			productReference = D0530DCD2FB7704900121DBD /* hobbymatch.app */;
+			productReference = D0530DCD2FB7704900121DBD /* Hobbymatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0530DD92FB7704B00121DBD /* hobbymatchTests */ = {
+		D0530DD92FB7704B00121DBD /* HobbymatchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0530DF12FB7704B00121DBD /* Build configuration list for PBXNativeTarget "hobbymatchTests" */;
+			buildConfigurationList = D0530DF12FB7704B00121DBD /* Build configuration list for PBXNativeTarget "HobbymatchTests" */;
 			buildPhases = (
 				D0530DD62FB7704B00121DBD /* Sources */,
 				D0530DD72FB7704B00121DBD /* Frameworks */,
@@ -167,18 +167,18 @@
 				D0530DDC2FB7704B00121DBD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				D0530DDD2FB7704B00121DBD /* hobbymatchTests */,
+				D0530DDD2FB7704B00121DBD /* HobbymatchTests */,
 			);
-			name = hobbymatchTests;
+			name = HobbymatchTests;
 			packageProductDependencies = (
 			);
 			productName = hobbymatchTests;
-			productReference = D0530DDA2FB7704B00121DBD /* hobbymatchTests.xctest */;
+			productReference = D0530DDA2FB7704B00121DBD /* HobbymatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D0530DE32FB7704B00121DBD /* hobbymatchUITests */ = {
+		D0530DE32FB7704B00121DBD /* HobbymatchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0530DF42FB7704B00121DBD /* Build configuration list for PBXNativeTarget "hobbymatchUITests" */;
+			buildConfigurationList = D0530DF42FB7704B00121DBD /* Build configuration list for PBXNativeTarget "HobbymatchUITests" */;
 			buildPhases = (
 				D0530DE02FB7704B00121DBD /* Sources */,
 				D0530DE12FB7704B00121DBD /* Frameworks */,
@@ -190,13 +190,13 @@
 				D0530DE62FB7704B00121DBD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				D0530DE72FB7704B00121DBD /* hobbymatchUITests */,
+				D0530DE72FB7704B00121DBD /* HobbymatchUITests */,
 			);
-			name = hobbymatchUITests;
+			name = HobbymatchUITests;
 			packageProductDependencies = (
 			);
 			productName = hobbymatchUITests;
-			productReference = D0530DE42FB7704B00121DBD /* hobbymatchUITests.xctest */;
+			productReference = D0530DE42FB7704B00121DBD /* HobbymatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0530DC82FB7704900121DBD /* Build configuration list for PBXProject "hobbymatch" */;
+			buildConfigurationList = D0530DC82FB7704900121DBD /* Build configuration list for PBXProject "Hobbymatch" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -240,9 +240,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0530DCC2FB7704900121DBD /* hobbymatch */,
-				D0530DD92FB7704B00121DBD /* hobbymatchTests */,
-				D0530DE32FB7704B00121DBD /* hobbymatchUITests */,
+				D0530DCC2FB7704900121DBD /* Hobbymatch */,
+				D0530DD92FB7704B00121DBD /* HobbymatchTests */,
+				D0530DE32FB7704B00121DBD /* HobbymatchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		D0530DDC2FB7704B00121DBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D0530DCC2FB7704900121DBD /* hobbymatch */;
+			target = D0530DCC2FB7704900121DBD /* Hobbymatch */;
 			targetProxy = D0530DDB2FB7704B00121DBD /* PBXContainerItemProxy */;
 		};
 		D0530DE62FB7704B00121DBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D0530DCC2FB7704900121DBD /* hobbymatch */;
+			target = D0530DCC2FB7704900121DBD /* Hobbymatch */;
 			targetProxy = D0530DE52FB7704B00121DBD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -513,7 +513,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hobbymatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hobbymatch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hobbymatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hobbymatch";
 			};
 			name = Debug;
 		};
@@ -534,7 +534,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hobbymatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hobbymatch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hobbymatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hobbymatch";
 			};
 			name = Release;
 		};
@@ -579,7 +579,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0530DC82FB7704900121DBD /* Build configuration list for PBXProject "hobbymatch" */ = {
+		D0530DC82FB7704900121DBD /* Build configuration list for PBXProject "Hobbymatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0530DEC2FB7704B00121DBD /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0530DEE2FB7704B00121DBD /* Build configuration list for PBXNativeTarget "hobbymatch" */ = {
+		D0530DEE2FB7704B00121DBD /* Build configuration list for PBXNativeTarget "Hobbymatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0530DEF2FB7704B00121DBD /* Debug */,
@@ -597,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0530DF12FB7704B00121DBD /* Build configuration list for PBXNativeTarget "hobbymatchTests" */ = {
+		D0530DF12FB7704B00121DBD /* Build configuration list for PBXNativeTarget "HobbymatchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0530DF22FB7704B00121DBD /* Debug */,
@@ -606,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0530DF42FB7704B00121DBD /* Build configuration list for PBXNativeTarget "hobbymatchUITests" */ = {
+		D0530DF42FB7704B00121DBD /* Build configuration list for PBXNativeTarget "HobbymatchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0530DF52FB7704B00121DBD /* Debug */,

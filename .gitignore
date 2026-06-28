@@ -48,3 +48,4 @@ xcuserdata/
 *.swp
 *~
 *.plist
+.log
