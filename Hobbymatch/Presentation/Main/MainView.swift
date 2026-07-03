@@ -19,6 +19,9 @@ struct MainView: View {
             Tab("アカウント", systemImage: "person") {
                 MyAccountView(profile: profile)
             }
+            Tab("マッチ", systemImage: "heart") {
+                MatchListView(currentUserId:user.id)
+            }
         }
     }
 }

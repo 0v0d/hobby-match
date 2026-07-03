@@ -41,7 +41,7 @@ service cloud.firestore {
     }
     match /matches/{matchId} {
       allow read: if request.auth != null
-      && request.auth.uid != resource.data.users;
+      && request.auth.uid in resource.data.users;
       allow create,update,delete: if false;
     }
   }

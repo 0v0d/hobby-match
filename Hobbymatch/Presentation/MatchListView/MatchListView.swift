@@ -1,26 +1,25 @@
 //
-//  ProfileListView.swift
+//  MatchListView.swift
 //  Hobbymatch
 //
-//  Created by 0v0 on 2026/05/31.
+//  Created by 0v0 on 2026/06/29.
 //
 
 import SwiftUI
 
-struct ProfileListView: View {
-    @Environment(SessionViewModel.self) private var sessionViewModel
-    @State private var viewModel: ProfileListViewModel
+struct MatchListView :View {
+    @State private var viewModel: MatchListViewModel
     private let currentUserId: String
 
     init(currentUserId: String) {
         self.currentUserId = currentUserId
         _viewModel = State(
-            initialValue: ProfileListViewModel(currentUserId: currentUserId)
+            initialValue: MatchListViewModel(currentUserId: currentUserId)
         )
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack{
             UserProfileListComponent(
                 errorMessage: viewModel.errorMessage,
                 profiles: viewModel.profiles,
