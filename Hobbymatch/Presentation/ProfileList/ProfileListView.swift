@@ -21,26 +21,11 @@ struct ProfileListView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
-                if let error = viewModel.errorMessage {
-                    Text(error)
-                        .foregroundStyle(.red)
-                } else if !viewModel.profiles.isEmpty {
-                    List(viewModel.profiles) {
-                        profile in
-                        NavigationLink(value: profile) {
-                            Text(profile.displayName)
-                        }
-                    }
-                } else {
-                    Text("まだ誰もいません")
-                }
-            }.navigationDestination(for: UserProfile.self) { selectedProfile in
-                ProfileDetailView(
-                    currentUserId: currentUserId,
-                    profile: selectedProfile
-                )
-            }
+            UserProfileListComponent(
+                errorMessage: viewModel.errorMessage,
+                profiles: viewModel.profiles,
+                currentUserId: currentUserId
+            )
         }
     }
 }

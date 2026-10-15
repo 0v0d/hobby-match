@@ -14,7 +14,7 @@ import {getFirestore} from "firebase-admin/firestore";
 initializeApp();
 
 export const onLikeCreate = onDocumentCreated(
-    {document: "likes/{likedId}", region: "asia-northeast1"},
+    {document: "likes/{likeId}", region: "asia-northeast1"},
 
     async(event) => {
         const like = event.data?.data();
